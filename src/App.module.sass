@@ -1,31 +1,33 @@
-.Log_in
+.App
     width: 100vw
     height: 100vh
-    background: url(../../../static/images/Login_background.jpg)
+    background: url(static/images/Login_background.jpg)
     background-size: cover
-    div
+    & > div
         width: 600px
         height: 100%
         margin: auto
         position: relative
-    div > a
-        color: #fff
-        text:
-            decoration: none
-        font:
-            size: 20px
-            weight: 400
-        position: absolute
-        top: 580px
-        left: 50%
-        transform: translate(-50%)
 
-.form
-    width: 600px
-    height: 460px
-    padding: 60px 100px
+.create
+    color: #fff
+    text:
+        decoration: none
+    font:
+        size: 20px
+        weight: 400
     position: absolute
-    top: 110px
+    bottom: -30px
+    left: 50%
+    transform: translate(-50%)
+    font-family: initial
+
+.login
+    width: 600px
+    min-height: 460px
+    padding: 70px 100px 66px 100px
+    position: absolute
+    top: 15vh
     background: #fff
     border-radius: 10px
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
@@ -37,47 +39,6 @@
         font:
             size: 35px
         margin-bottom: 20px
-    .input
-        display: block
-        width: 100%
-        height: 35px
-        border: none
-        box-shadow: 0 0 5px 2px #0000001a
-        margin: 10px 0 20px 0
-        border-radius: 5px
-        padding: 15px
-        font:
-            weight: 600
-            size: 15px
-        outline: none
-        color: #525252
-    .label
-        display: block
-        font:
-            size: 11px
-            weight: bold
-        color: #8b8b8b
-        margin-left: 15px
-    .clear
-        position: absolute
-        top: 160px
-        right: 110px
-        width: 20px
-        heigth: 20px
-        cursor: pointer
-        filter: invert(33%) sepia(0%) saturate(16%) hue-rotate(166deg) brightness(94%) contrast(93%)
-    .eye
-        position: absolute
-        top: 240px
-        right: 110px
-        width: 20px
-        heigth: 20px
-        cursor: pointer
-        filter: invert(33%) sepia(0%) saturate(16%) hue-rotate(166deg) brightness(94%) contrast(93%)
-    h6
-        display: block
-        color: red
-        margin: -10px 0 15px 15px
     button
         display: block
         margin-top: 30px
@@ -96,23 +57,24 @@
         &:active
             background: darken(blue, 5%)
             transform: scale(0.98)
-    h4
-        position: absolute
-        top: 350px
-        left: 50%
-        transform: translate(-50%)
-        color: green
-        font-size: 23px
-        text-transform: uppercase
 
-.form > p
+.success
+    margin-top: 35px
+    color: green
+    font-size: 23px
+    text:
+        align: center
+        transform: uppercase
+
+.remember
     float: left
     margin-left: 10px
+    vertical-align: middle
     color: #525252
     font:
         weight: 600
 
-.form > a
+.forgot
     margin-left: 131px
     color: #525252
     font:
@@ -165,8 +127,8 @@
             transition: all 0.2s ease-out
     .checkbox_custom
         position: absolute
-        top: 0px
-        left: 0px
+        top: 0
+        left: 0
         height: 24px
         width: 24px
         background-color: transparent
@@ -178,8 +140,8 @@
             content: ""
             left: 12px
             top: 12px
-            height: 0px
-            width: 0px
+            height: 0
+            width: 0
             border-radius: 5px
             border: solid #525252
             border-width: 0 3px 3px 0
@@ -191,8 +153,8 @@
             content: ""
             left: 10px
             top: 10px
-            width: 0px
-            height: 0px
+            width: 0
+            height: 0
             border-radius: 5px
             border: 2px solid #000
             transform: scale(0)
@@ -204,3 +166,12 @@
     background: #0905fd93 !important
     color: #ffffffbe !important
     cursor: default !important
+
+.img
+    position: absolute
+    top: 8px
+    right: 10px
+    width: 20px
+    height: 20px
+    cursor: pointer
+    filter: invert(33%) sepia(0%) saturate(16%) hue-rotate(166deg) brightness(94%) contrast(93%)

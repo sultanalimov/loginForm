@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACI,QADI,CACJ,EAAE,CAAC;EACC,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;EACT,SAAS,EAAE,qBAAqB;EAE5B,SAAI,EAAE,IAAI;CAAK",
-    "sources": [
-        "../Sign_up.module.sass"
-    ],
-    "names": [],
-    "file": "Sign_up.module.css"
-}
